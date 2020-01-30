@@ -1,0 +1,110 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4285629654,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify that the user can Sign In through valid Email and Password",
+        "description": "",
+        "id": "sign-in-module;verify-that-the-user-can-sign-in-through-valid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 144923,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4069256454,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the Sign In Screen",
+            "match": {
+              "location": "SignInSD.userIsOnTheSignInScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1237965115,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter valid email address \"stayseated05@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "stayseated05@gmail.com",
+                  "offset": 32
+                }
+              ],
+              "location": "SignInSD.userEnterValidEmailAddress(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1158007335,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enter valid password \"1111111A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1111111A",
+                  "offset": 27
+                }
+              ],
+              "location": "SignInSD.userEnterValidPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1077240367,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on the Sign In button",
+            "match": {
+              "location": "SignInSD.userClickOnTheSignInButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@A_ValidSignIn"
+          }
+        ]
+      }
+    ],
+    "name": "Sign In Module",
+    "description": "This sign in feature deals with the sign in functionality of the application",
+    "id": "sign-in-module",
+    "keyword": "Feature",
+    "uri": "A_SignIn.feature"
+  }
+]
