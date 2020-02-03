@@ -96,11 +96,11 @@ public class ConfigFileReader {
     }
     //endregion
 
-    //region This Function is used to get key value of a Roster App Keywords File Path
-    public String getRosterAppKeywords() {
+    //region This Function is used to get key value of a SellerOptics App Keywords File Path
+    public String getSellerOpticsAppKeywords() {
         String excelPath = properties.getProperty("sellerOpticsKeywords");
         if (excelPath != null) return excelPath;
-        else throw new RuntimeException("rosterAppKeywords not specified in the Configuration.properties file.");
+        else throw new RuntimeException("SellerOpticsAppKeywords not specified in the Configuration.properties file.");
     }
     //endregion
 }

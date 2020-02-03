@@ -19,7 +19,7 @@ public class ReadExcel {
         if (mSheet != null) {
             return;
         }
-        File src = new File(configFileReader.getRosterAppKeywords());
+        File src = new File(configFileReader.getSellerOpticsAppKeywords());
 
         try {
             FileInputStream file = new FileInputStream(src);

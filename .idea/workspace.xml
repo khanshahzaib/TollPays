@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b1b5fef7-a451-42a4-8fb2-8935c226a84a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/SignInSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/SignInSD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/Config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DataProvider/ConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DataProvider/ConfigFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/ReadExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/ReadExcel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Steps/SignInSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Steps/SignInSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DataProvider/ConfigFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DataProvider/ConfigFileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/SignInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Utilities/ReadExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utilities/ReadExcel.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
