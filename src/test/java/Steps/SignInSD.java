@@ -24,7 +24,7 @@ public class SignInSD extends BaseUtil {
 //        scenarioDef.createNode(new GherkinKeyword("Given"), "User is on Application SignIn Page");
     }
 
-    @When("user enter valid email address \"([^\"]*)\"$")
+    @When("user enter valid email address \"([^\"]*)\"")
     public void userEnterValidEmailAddress(String enterEmailAddress) throws Throwable{
         System.out.println("user enter valid email address");
         SignInPage signInPage = new SignInPage(Web_Driver);
@@ -32,7 +32,7 @@ public class SignInSD extends BaseUtil {
         Thread.sleep(500);
     }
 
-    @And("user enter valid password \"([^\"]*)\"$")
+    @And("user enter valid password \"([^\"]*)\"")
     public void userEnterValidPassword(String enterPassword) throws Throwable{
         System.out.println("user enter valid password");
         SignInPage signInPage = new SignInPage(Web_Driver);
