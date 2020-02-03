@@ -7,40 +7,66 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4739347632,
+  "duration": 4700834602,
   "status": "passed"
 });
 formatter.scenario({
   "line": 5,
-  "name": "Verify that the user can Sign In through valid Email and Password",
+  "name": "Verify that the user can enter Valid URL",
   "description": "",
-  "id": "sign-in-module;verify-that-the-user-can-sign-in-through-valid-email-and-password",
+  "id": "sign-in-module;verify-that-the-user-can-enter-valid-url",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 4,
-      "name": "@A_ValidSignIn"
+      "name": "@A_LoginUrl"
     }
   ]
 });
 formatter.step({
   "line": 6,
+  "name": "user enter the correct URL",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SignInSD.userEnterTheCorrectURL()"
+});
+formatter.result({
+  "duration": 3055331101,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 9,
+  "name": "Verify that the user can Sign In through valid Email Address and Password",
+  "description": "",
+  "id": "sign-in-module;verify-that-the-user-can-sign-in-through-valid-email-address-and-password",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 8,
+      "name": "@B_ValidSignIn"
+    }
+  ]
+});
+formatter.step({
+  "line": 10,
   "name": "user is on the Sign In Screen",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 11,
   "name": "user enter valid email address \"stayseated05@gmail.com\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 12,
   "name": "user enter valid password \"1111111A\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 13,
   "name": "user click on the Sign In button",
   "keyword": "Then "
 });
@@ -48,7 +74,7 @@ formatter.match({
   "location": "SignInSD.userIsOnTheSignInScreen()"
 });
 formatter.result({
-  "duration": 3451014114,
+  "duration": 173251,
   "status": "passed"
 });
 formatter.match({
@@ -61,7 +87,7 @@ formatter.match({
   "location": "SignInSD.userEnterValidEmailAddress(String)"
 });
 formatter.result({
-  "duration": 1307940026,
+  "duration": 838294045,
   "status": "passed"
 });
 formatter.match({
@@ -74,18 +100,18 @@ formatter.match({
   "location": "SignInSD.userEnterValidPassword(String)"
 });
 formatter.result({
-  "duration": 1185552595,
+  "duration": 643197046,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSD.userClickOnTheSignInButton()"
 });
 formatter.result({
-  "duration": 1077308517,
+  "duration": 603016784,
   "status": "passed"
 });
 formatter.after({
-  "duration": 771362520,
+  "duration": 809892794,
   "status": "passed"
 });
 });

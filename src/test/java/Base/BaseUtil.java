@@ -6,13 +6,13 @@ import org.openqa.selenium.WebDriver;
 
 public class BaseUtil {
 
-    public static WebDriver Web_Driver;
+    protected static WebDriver Web_Driver;
 
     public static ExtentReports extent;
 
-    public static ExtentTest scenarioDef;
+    static ExtentTest scenarioDef;
 
     public static ExtentTest features;
 
-    public static String reportLocation = "/Reports/SellerOptics/";
+    static String reportLocation = "/Reports/SellerOptics/";
 }

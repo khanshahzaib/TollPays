@@ -12,7 +12,7 @@ import java.nio.file.Files;
 
 public class ExtentReportUtil extends BaseUtil {
 
-    String fileName = reportLocation + "Extent Report.html";
+    private String fileName = reportLocation + "Extent Report.html";
 
     public void ExtentReport() {
         //First is to create Extent Reports

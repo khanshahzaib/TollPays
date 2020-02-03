@@ -10,13 +10,12 @@ import java.io.FileInputStream;
 public class ReadExcel {
 
     private static XSSFSheet mSheet;
-    static ConfigFileReader configFileReader;
 
     private ReadExcel() {
     }
 
     public static void readExcelFile() {
-        configFileReader= new ConfigFileReader();
+        ConfigFileReader configFileReader = new ConfigFileReader();
         if (mSheet != null) {
             return;
         }
@@ -29,14 +28,9 @@ public class ReadExcel {
 
             mSheet = wb.getSheetAt(0);
 
-            //String data1 = sheet1.getRow(1).getCell(1).getStringCellValue();
-
-            //return sheet1.getRow(1).getCell(2).getStringCellValue();
         } catch (Exception ex) {
             System.out.println("You got: " + ex);
         }
-
-        return;
     }
 
     public static String GetCellValue(int row, int column) {

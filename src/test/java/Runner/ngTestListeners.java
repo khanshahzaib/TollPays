@@ -1,5 +1,6 @@
 package Runner;
 
+import Base.BaseUtil;
 import Base.ExtentReportUtil;
 import com.aventstack.extentreports.gherkin.model.Feature;
 import org.testng.ITestContext;
@@ -12,7 +13,7 @@ import static Base.BaseUtil.features;
 
 public class ngTestListeners implements ITestListener {
 
-    ExtentReportUtil extentReportUtil = new ExtentReportUtil();
+    private ExtentReportUtil extentReportUtil = new ExtentReportUtil();
 
     @Override
     public void onTestStart(ITestResult iTestResult) {
@@ -51,7 +52,7 @@ public class ngTestListeners implements ITestListener {
 
         extentReportUtil.ExtentReport();
         //ToDo: Feature - Hard coding the feature name
-        features = extentReportUtil.extent.createTest(Feature.class, "Regression Suite on ARCOS");
+        features = BaseUtil.extent.createTest(Feature.class, "Regression Suite on ARCOS");
     }
 
     @Override
