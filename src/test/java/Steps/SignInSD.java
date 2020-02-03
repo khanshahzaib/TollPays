@@ -8,6 +8,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +19,10 @@ public class SignInSD extends BaseUtil {
 
     private BaseUtil base;
     ConfigFileReader configFileReader;
-    SignInPage signInPage;
+//    SignInPage signInPage;
 
     public SignInSD(BaseUtil base) {
-        signInPage = new SignInPage(base.Web_Driver);
+//        signInPage = new SignInPage(Web_Driver);
         this.base = base;
     }
 
@@ -41,7 +42,7 @@ public class SignInSD extends BaseUtil {
     @When("user enter valid email address \"([^\"]*)\"$")
     public void userEnterValidEmailAddress(String enterEmailAddress) throws Throwable{
         System.out.println("user enter valid email address");
-//        SignInPage signInPage = new SignInPage(Web_Driver);
+        SignInPage signInPage = new SignInPage(Web_Driver);
         signInPage.loginEmailAddress(enterEmailAddress);
         Thread.sleep(1000);
     }
@@ -49,7 +50,7 @@ public class SignInSD extends BaseUtil {
     @And("user enter valid password \"([^\"]*)\"$")
     public void userEnterValidPassword(String enterPassword) throws Throwable{
         System.out.println("user enter valid password");
-//        SignInPage signInPage = new SignInPage(Web_Driver);
+        SignInPage signInPage = new SignInPage(Web_Driver);
         signInPage.loginPassword(enterPassword);
         Thread.sleep(1000);
     }
@@ -57,7 +58,7 @@ public class SignInSD extends BaseUtil {
     @Then("user click on the Sign In button")
     public void userClickOnTheSignInButton() throws Throwable{
         System.out.println("user click on the Sign In button");
-//        SignInPage signInPage = new SignInPage(Web_Driver);
+        SignInPage signInPage = new SignInPage(Web_Driver);
         signInPage.loginButton();
         Thread.sleep(1000);
     }

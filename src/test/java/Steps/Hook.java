@@ -42,7 +42,7 @@ public class Hook extends BaseUtil {
         }
         Web_Driver.manage().window().maximize();
         Web_Driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
-//        ReadExcel.readExcelFile();
+        ReadExcel.readExcelFile();
     }
 
     @After("@A_ValidSignIn")

@@ -14,7 +14,7 @@ public class SignInPage {
 
     public SignInPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
-//        this.btnSignIn = driver.findElement(By.id(ReadExcel.GetCellValue(3, 2)));
+        this.btnSignIn = driver.findElement(By.xpath(ReadExcel.GetCellValue(3, 3)));
     }
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"doLogin\"]/div[2]/div[1]/input")
@@ -25,7 +25,7 @@ public class SignInPage {
     //@CacheLookup
     public WebElement txtPassword;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"doLogin\"]/div[2]/div[4]/div/button")
+//    @FindBy(how = How.XPATH, using = "//*[@id=\"doLogin\"]/div[2]/div[4]/div/button")
     public WebElement btnSignIn;
 
     public void abc(String email, String password) {

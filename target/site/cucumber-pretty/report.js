@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4258801210,
+  "duration": 4739347632,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,7 +48,7 @@ formatter.match({
   "location": "SignInSD.userIsOnTheSignInScreen()"
 });
 formatter.result({
-  "duration": 4239660674,
+  "duration": 3451014114,
   "status": "passed"
 });
 formatter.match({
@@ -61,7 +61,7 @@ formatter.match({
   "location": "SignInSD.userEnterValidEmailAddress(String)"
 });
 formatter.result({
-  "duration": 1247649514,
+  "duration": 1307940026,
   "status": "passed"
 });
 formatter.match({
@@ -74,18 +74,18 @@ formatter.match({
   "location": "SignInSD.userEnterValidPassword(String)"
 });
 formatter.result({
-  "duration": 1148054437,
+  "duration": 1185552595,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInSD.userClickOnTheSignInButton()"
 });
 formatter.result({
-  "duration": 1081441497,
+  "duration": 1077308517,
   "status": "passed"
 });
 formatter.after({
-  "duration": 725386151,
+  "duration": 771362520,
   "status": "passed"
 });
 });
