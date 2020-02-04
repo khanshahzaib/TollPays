@@ -14,6 +14,7 @@ public class ReadExcel {
     private ReadExcel() {
     }
 
+    //This method is to set the File path and to open the Excel file
     public static void readExcelFile() {
         ConfigFileReader configFileReader = new ConfigFileReader();
         if (mSheet != null) {
@@ -22,8 +23,10 @@ public class ReadExcel {
         File src = new File(configFileReader.getSellerOpticsAppKeywords());
 
         try {
+            // Open the Excel file
             FileInputStream file = new FileInputStream(src);
 
+            // Access the required data sheet
             XSSFWorkbook wb = new XSSFWorkbook(file);
 
             mSheet = wb.getSheetAt(0);
@@ -33,9 +36,10 @@ public class ReadExcel {
         }
     }
 
+    //This method is to read the data from the Excel cell, in this we are passing parameters as Row num and Col num
     public static String GetCellValue(int row, int column) {
         if (mSheet == null) {
-            return "";
+            return "Cell Value is null";
         }
         return mSheet.getRow(row).getCell(column).getStringCellValue();
     }
