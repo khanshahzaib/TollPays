@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1b5fef7-a451-42a4-8fb2-8935c226a84a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/SignInSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/SignInSD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/ReadExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/ReadExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="b1b5fef7-a451-42a4-8fb2-8935c226a84a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,18 +52,6 @@
       <recent name="E:\Projects\Automation_Projects\Web Testing\Seller Optics\src\test\java\ExcelFiles" />
       <recent name="E:\Projects\Automation_Projects\Web Testing\Seller Optics\Configuration" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="TestNG.E:/Projects/Automation_Projects/Web Testing/Seller Optics/src/test/java/testNG.xml">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -143,5 +124,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583680581903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1583680581903" />
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom" timestamp="1583680573346">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583680573346" />
+    <state width="1322" height="179" key="GridCell.Tab.0.center" timestamp="1583680573346">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583680573346" />
+    <state width="1322" height="179" key="GridCell.Tab.0.left" timestamp="1583680573346">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583680573346" />
+    <state width="1322" height="179" key="GridCell.Tab.0.right" timestamp="1583680573346">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583680573346" />
   </component>
 </project>
