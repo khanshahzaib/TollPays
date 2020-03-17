@@ -53,6 +53,18 @@
       <recent name="E:\Projects\Automation_Projects\Web Testing\Seller Optics\Configuration" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="TestNG.E:/Projects/Automation_Projects/Web Testing/Seller Optics/src/test/java/testNG.xml">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.AmaxzaDigital.Main" />
