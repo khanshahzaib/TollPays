@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 
 public class BaseUtil {
 
-    
     protected static WebDriver Web_Driver;
 
     public static ExtentReports extent;
