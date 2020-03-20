@@ -14,9 +14,9 @@ public class SignUpPage {
         this.continueButton = webDriver.findElement(By.xpath(ReadExcel.GetCellValue(2,3)));
     }
 
-    WebElement signUpButton;
+    private WebElement signUpButton;
 
-    WebElement continueButton;
+    private WebElement continueButton;
 
     public void signUpMethod(){
         signUpButton.click();
