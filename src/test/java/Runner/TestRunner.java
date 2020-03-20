@@ -8,7 +8,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
                  glue = "Steps",
                  monochrome = true,
                  tags = {
-                " @A_LoginUrl, @B_ValidSignIn" +
+                " " +
+                        "@A_LoginUrl, " +
+//                        "@B_ValidSignIn, " +
+                        "@C_SignUpProcess" +
                  ""})
 
 public class TestRunner extends AbstractTestNGCucumberTests {
