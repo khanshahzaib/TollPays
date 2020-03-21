@@ -27,13 +27,11 @@ public class SignUpPage {
     //Wait For DOM Elements
     //region
 
-    //Variable's declaration
     //endregion
 
     //Load DOM Elements
     //region
 
-    //Variable's declaration
     //endregion
 
     //Methods
@@ -47,8 +45,5 @@ public class SignUpPage {
         continueButton.click();
     }
     //endregion
-
-
-
 
 }
