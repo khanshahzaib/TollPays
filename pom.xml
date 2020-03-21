@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>groupId</groupId>
-    <artifactId>SellerOptics</artifactId>
+    <artifactId>TollPays</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>
@@ -37,7 +37,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>SellerOptics</projectName>
+                            <projectName>TollPays</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
                         </configuration>

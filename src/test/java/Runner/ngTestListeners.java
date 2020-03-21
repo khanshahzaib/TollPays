@@ -52,7 +52,7 @@ public class ngTestListeners implements ITestListener {
 
         extentReportUtil.ExtentReport();
         //ToDo: Feature - Hard coding the feature name
-        features = BaseUtil.extent.createTest(Feature.class, "Regression Suite on Seller Optics");
+        features = BaseUtil.extent.createTest(Feature.class, "Regression Suite on Toll Pays");
     }
 
     @Override

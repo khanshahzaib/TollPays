@@ -20,7 +20,7 @@ public class ReadExcel {
         if (mSheet != null) {
             return;
         }
-        File src = new File(configFileReader.getSellerOpticsAppKeywords());
+        File src = new File(configFileReader.getTollPaysAppKeywords());
 
         try {
             // Open the Excel file

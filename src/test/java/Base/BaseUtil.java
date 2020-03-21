@@ -14,5 +14,5 @@ public class BaseUtil {
 
     public static ExtentTest features;
 
-    static String reportLocation = "/Reports/SellerOptics/";
+    static String reportLocation = "/Reports/TollPays/";
 }
