@@ -14,9 +14,30 @@ public class SignUpPage {
         this.continueButton = webDriver.findElement(By.xpath(ReadExcel.GetCellValue(2,3)));
     }
 
+    //Variable's declaration
+    //region
+
     private WebElement signUpButton;
 
     private WebElement continueButton;
+
+    //Variable's declaration
+    //endregion
+
+    //Wait For DOM Elements
+    //region
+
+    //Variable's declaration
+    //endregion
+
+    //Load DOM Elements
+    //region
+
+    //Variable's declaration
+    //endregion
+
+    //Methods
+    //region
 
     public void signUpMethod(){
         signUpButton.click();
@@ -25,4 +46,9 @@ public class SignUpPage {
     public void continueMethod(){
         continueButton.click();
     }
+    //endregion
+
+
+
+
 }
