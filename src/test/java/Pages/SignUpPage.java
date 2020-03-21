@@ -21,7 +21,6 @@ public class SignUpPage {
 
     private WebElement continueButton;
 
-    //Variable's declaration
     //endregion
 
     //Wait For DOM Elements
