@@ -30,6 +30,7 @@ public class ReadExcel {
             XSSFWorkbook wb = new XSSFWorkbook(file);
 
             mSheet = wb.getSheetAt(0);
+            mSheet = wb.getSheetAt(1);
 
         } catch (Exception ex) {
             System.out.println("You got: " + ex);
