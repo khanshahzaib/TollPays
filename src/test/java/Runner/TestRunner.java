@@ -11,7 +11,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
                 " " +
                         "@A_LoginUrl, " +
 //                        "@B_ValidSignIn, " +
-                        "@C_SignUpProcess" +
+//                        "@C_SignUpProcess" +
+                        "" +
                  ""})
 
 public class TestRunner extends AbstractTestNGCucumberTests {

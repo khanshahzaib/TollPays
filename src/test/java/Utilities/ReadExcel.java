@@ -1,18 +1,14 @@
 package Utilities;
 
 import DataProvider.ConfigFileReader;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
 import java.io.FileInputStream;
 
+import static Base.BaseUtil.mSheet;
+
 public class ReadExcel {
-
-    private static XSSFSheet mSheet;
-
-    private ReadExcel() {
-    }
 
     //This method is to set the File path and to open the Excel file
     public static void readExcelFile() {
@@ -20,6 +16,7 @@ public class ReadExcel {
         if (mSheet != null) {
             return;
         }
+
         File src = new File(configFileReader.getTollPaysAppKeywords());
 
         try {
@@ -31,6 +28,8 @@ public class ReadExcel {
 
             mSheet = wb.getSheetAt(0);
             mSheet = wb.getSheetAt(1);
+            mSheet = wb.getSheetAt(2);
+            mSheet = wb.getSheetAt(3);
 
         } catch (Exception ex) {
             System.out.println("You got: " + ex);

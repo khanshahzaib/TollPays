@@ -7,10 +7,15 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 
 public class SignUpSD extends BaseUtil {
+
+    SignUpPage signUpPage;
+
     @Given("user click on the Sign Up Button")
     public void userClickOnTheSignUpButton() throws Throwable {
         System.out.println("user click on the Sign Up Button");
-        SignUpPage signUpPage = new SignUpPage(Web_Driver);
+        signUpPage = new SignUpPage(Web_Driver);
+        signUpPage.waitForSignUpButton();
+        signUpPage.loadControlsForSignUpButton();
         signUpPage.signUpMethod();
         Thread.sleep(500);
     }
@@ -23,7 +28,9 @@ public class SignUpSD extends BaseUtil {
     @And("user click on the continue button")
     public void userClickOnTheContinueButton() throws Throwable {
         System.out.println("user click on the continue button");
-        SignUpPage signUpPage = new SignUpPage(Web_Driver);
+        signUpPage = new SignUpPage(Web_Driver);
+        signUpPage.waitForContinueButton();
+        signUpPage.loadControlsForContinueButton();
         signUpPage.continueMethod();
         Thread.sleep(500);
     }
