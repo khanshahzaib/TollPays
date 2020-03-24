@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 10865639300,
+              "duration": 10814557300,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4970229500,
+              "duration": 5267333600,
               "status": "passed"
             },
             "line": 6,
@@ -53,13 +53,13 @@
     "elements": [
       {
         "line": 5,
-        "name": "Verify that the user can Sign Up",
+        "name": "Verify that the user can Contact TollPays Admin",
         "description": "",
-        "id": "sign-up-module;verify-that-the-user-can-sign-up",
+        "id": "contact-us-module;verify-that-the-user-can-contact-tollpays-admin",
         "after": [
           {
             "result": {
-              "duration": 732394900,
+              "duration": 717863100,
               "status": "passed"
             },
             "match": {
@@ -72,53 +72,113 @@
         "steps": [
           {
             "result": {
-              "duration": 1829933600,
+              "duration": 1988184700,
               "status": "passed"
             },
             "line": 6,
-            "name": "user click on the Sign Up Button",
+            "name": "user click on the Contact Us button",
             "match": {
-              "location": "SignUpSD.userClickOnTheSignUpButton()"
+              "location": "ContactUsSD.userClickOnTheContactUsButton()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 234100,
+              "duration": 9288100,
               "status": "passed"
             },
             "line": 7,
-            "name": "user is on the Sign Up Screen",
+            "name": "user is on the Contact Us Screen",
             "match": {
-              "location": "SignUpSD.userIsOnTheSignUpScreen()"
+              "location": "ContactUsSD.userIsOnTheContactUsScreen()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 634293500,
+              "duration": 144567100,
               "status": "passed"
             },
             "line": 8,
-            "name": "user click on the continue button",
+            "name": "user select the reason of contact",
             "match": {
-              "location": "SignUpSD.userClickOnTheContinueButton()"
+              "location": "ContactUsSD.userSelectTheReasonOfContact()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136281200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user select the account type",
+            "match": {
+              "location": "ContactUsSD.userSelectTheAccountType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175870300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enter valid email address for contact \"stayseated01@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "stayseated01@gmail.com",
+                  "offset": 44
+                }
+              ],
+              "location": "ContactUsSD.userEnterValidEmailAddressForContact(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149430800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enter message \"Hello World\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hello World",
+                  "offset": 20
+                }
+              ],
+              "location": "ContactUsSD.userEnterMessage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171295200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on the Submit button",
+            "match": {
+              "location": "ContactUsSD.userClickOnTheSubmitButton()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 4,
-            "name": "@C_SignUpProcess"
+            "name": "@D_ContactUs"
           }
         ]
       }
     ],
-    "name": "Sign up Module",
-    "description": "This sign up feature deals with the sign up functionality of the application",
-    "id": "sign-up-module",
+    "name": "Contact Us Module",
+    "description": "This Contact Us feature deals with the Contact Us functionality of the application",
+    "id": "contact-us-module",
     "keyword": "Feature",
-    "uri": "B_SignUp.feature"
+    "uri": "C_ContactUs.feature"
   }
 ]

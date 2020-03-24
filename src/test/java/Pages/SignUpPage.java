@@ -15,7 +15,7 @@ public class SignUpPage extends BaseUtil {
         PageFactory.initElements(webDriver,this);
     }
 
-    //Variable's declaration
+    //Variable's Declaration
     //region
 
     private WebElement signUpButton;
