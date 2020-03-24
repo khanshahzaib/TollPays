@@ -43,4 +43,11 @@ public class ReadExcel {
         }
         return mSheet.getRow(row).getCell(column).getStringCellValue();
     }
+
+    public static double GetCellValueNumber(int row, int column) {
+        if (mSheet == null) {
+            return 0;
+        }
+        return mSheet.getRow(row).getCell(column).getNumericCellValue();
+    }
 }
