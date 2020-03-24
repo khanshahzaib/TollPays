@@ -124,12 +124,12 @@ public class ContactUsPage extends BaseUtil {
         select.selectByIndex(1);
     }
 
-    public void emailMethod(String enterEmailAddress){
-        email.sendKeys(enterEmailAddress);
+    public void emailMethod(){
+        email.sendKeys(ReadExcel.GetCellValue(10,1));
     }
 
-    public void messageMethod(String enterMessage){
-        message.sendKeys(enterMessage);
+    public void messageMethod(){
+        message.sendKeys(ReadExcel.GetCellValue(11,1));
     }
 
     public void submitMethod(){

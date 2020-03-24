@@ -44,22 +44,22 @@ public class ContactUsSD extends BaseUtil {
         contactUsPage.accountTypeMethod();
     }
 
-    @And("user enter valid email address for contact \"([^\"]*)\"")
-    public void userEnterValidEmailAddressForContact(String enterEmailAddress) throws Throwable {
+    @And("user enter valid email address for contact")
+    public void userEnterValidEmailAddressForContact() throws Throwable {
         System.out.println("user enter valid email address for contact");
         contactUsPage = new ContactUsPage(Web_Driver);
         contactUsPage.waitForEmailField();
         contactUsPage.loadControlsForEmailField();
-        contactUsPage.emailMethod(enterEmailAddress);
+        contactUsPage.emailMethod();
     }
 
-    @And("user enter message \"([^\"]*)\"")
-    public void userEnterMessage(String enterMessage) throws Throwable {
+    @And("user enter message")
+    public void userEnterMessage() throws Throwable {
         System.out.println("user enter message");
         contactUsPage = new ContactUsPage(Web_Driver);
         contactUsPage.waitForMessageField();
         contactUsPage.loadControlsForMessageField();
-        contactUsPage.messageMethod(enterMessage);
+        contactUsPage.messageMethod();
     }
 
     @Then("user click on the Submit button")

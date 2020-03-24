@@ -7,7 +7,7 @@ Feature: Contact Us Module
     When user is on the Contact Us Screen
     And user select the reason of contact
     And user select the account type
-    And user enter valid email address for contact "stayseated01@gmail.com"
-    And user enter message "Hello World"
+    And user enter valid email address for contact
+    And user enter message
     Then user click on the Submit button
 
