@@ -10,9 +10,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
                  tags = {
                 " " +
                         "@A_LoginUrl, " +
-//                        "@B_ValidSignIn, " +
+                        "@B_ValidSignIn, " +
 //                        "@C_SignUpProcess" +
-                        "@D_ContactUs" +
+//                        "@D_ContactUs" +
                  ""})
 
 public class TestRunner extends AbstractTestNGCucumberTests {

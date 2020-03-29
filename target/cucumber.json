@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 11006853100,
+              "duration": 11175991500,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13463405000,
+              "duration": 8063733701,
               "status": "passed"
             },
             "line": 6,
@@ -40,26 +40,16 @@
             "name": "@A_LoginUrl"
           }
         ]
-      }
-    ],
-    "name": "Sign In Module",
-    "description": "This sign in feature deals with the sign in functionality of the application",
-    "id": "sign-in-module",
-    "keyword": "Feature",
-    "uri": "A_SignIn.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
+      },
       {
-        "line": 5,
-        "name": "Verify that the user can Contact TollPays Admin",
+        "line": 9,
+        "name": "Verify that the user can Sign In through valid Email Address and Password",
         "description": "",
-        "id": "contact-us-module;verify-that-the-user-can-contact-tollpays-admin",
+        "id": "sign-in-module;verify-that-the-user-can-sign-in-through-valid-email-address-and-password",
         "after": [
           {
             "result": {
-              "duration": 742471300,
+              "duration": 743562900,
               "status": "passed"
             },
             "match": {
@@ -72,101 +62,77 @@
         "steps": [
           {
             "result": {
-              "duration": 8380109300,
+              "duration": 391900,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user click on the Contact Us button",
+            "line": 10,
+            "name": "user is on the Sign In Screen",
             "match": {
-              "location": "ContactUsSD.userClickOnTheContactUsButton()"
+              "location": "SignInSD.userIsOnTheSignInScreen()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1264400,
+              "duration": 161685900,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user is on the Contact Us Screen",
+            "line": 11,
+            "name": "user click on the Sign In Button",
             "match": {
-              "location": "ContactUsSD.userIsOnTheContactUsScreen()"
+              "location": "SignInSD.userClickOnTheSignInButton()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 297680600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user select the reason of contact",
-            "match": {
-              "location": "ContactUsSD.userSelectTheReasonOfContact()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 212404700,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user select the account type",
-            "match": {
-              "location": "ContactUsSD.userSelectTheAccountType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2229257000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user enter valid email address for contact",
-            "match": {
-              "location": "ContactUsSD.userEnterValidEmailAddressForContact()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2303468400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enter message",
-            "match": {
-              "location": "ContactUsSD.userEnterMessage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 254595500,
+              "duration": 880910499,
               "status": "passed"
             },
             "line": 12,
-            "name": "user click on the Submit button",
+            "name": "user enter valid email address",
             "match": {
-              "location": "ContactUsSD.userClickOnTheSubmitButton()"
+              "location": "SignInSD.userEnterValidEmailAddress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 696446700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enter valid password",
+            "match": {
+              "location": "SignInSD.userEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 684838199,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click on the Sign In Submit button",
+            "match": {
+              "location": "SignInSD.userClickOnTheSignInSubmitButton()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 4,
-            "name": "@D_ContactUs"
+            "line": 8,
+            "name": "@B_ValidSignIn"
           }
         ]
       }
     ],
-    "name": "Contact Us Module",
-    "description": "This Contact Us feature deals with the Contact Us functionality of the application",
-    "id": "contact-us-module",
+    "name": "Sign In Module",
+    "description": "This sign in feature deals with the sign in functionality of the application",
+    "id": "sign-in-module",
     "keyword": "Feature",
-    "uri": "C_ContactUs.feature"
+    "uri": "A_SignIn.feature"
   }
 ]

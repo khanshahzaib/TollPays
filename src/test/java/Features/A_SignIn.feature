@@ -8,7 +8,8 @@ Feature: Sign In Module
   @B_ValidSignIn
   Scenario: Verify that the user can Sign In through valid Email Address and Password
     Given user is on the Sign In Screen
-    When user enter valid email address "stayseated05@gmail.com"
-    And user enter valid password "1111111A"
-    Then user click on the Sign In button
+    When user click on the Sign In Button
+    When user enter valid email address
+    And user enter valid password
+    Then user click on the Sign In Submit button
 

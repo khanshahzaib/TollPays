@@ -42,7 +42,7 @@ public class Hook extends BaseUtil {
         ReadExcel.readExcelFile();
     }
 
-    @After("@D_ContactUs")
+    @After("@B_ValidSignIn")
     public void TearDownTest(Scenario scenario) {
 
         if (scenario.isFailed()) {

@@ -10,6 +10,8 @@ import cucumber.api.java.en.When;
 
 public class SignInSD extends BaseUtil {
 
+    SignInPage signInPage;
+
     @Given("user enter the correct URL")
     public void userEnterTheCorrectURL() throws Throwable {
         ConfigFileReader configFileReader = new ConfigFileReader();
@@ -18,32 +20,47 @@ public class SignInSD extends BaseUtil {
         Thread.sleep(500);
     }
 
+    @When("user click on the Sign In Button")
+    public void userClickOnTheSignInButton() throws Throwable {
+        System.out.println("user click on the Sign In Button");
+        signInPage = new SignInPage(Web_Driver);
+        signInPage.waitForSignInButton();
+        signInPage.loadControlsForSignInButton();
+        signInPage.loginSignInButton();
+    }
+
     @Given("user is on the Sign In Screen")
     public void userIsOnTheSignInScreen() throws Throwable {
         System.out.println("user is on the Sign In Screen");
 //        scenarioDef.createNode(new GherkinKeyword("Given"), "User is on Application SignIn Page");
     }
 
-    @When("user enter valid email address \"([^\"]*)\"")
-    public void userEnterValidEmailAddress(String enterEmailAddress) throws Throwable{
+    @When("user enter valid email address")
+    public void userEnterValidEmailAddress() throws Throwable{
         System.out.println("user enter valid email address");
-        SignInPage signInPage = new SignInPage(Web_Driver);
-        signInPage.loginEmailAddress(enterEmailAddress);
+        signInPage = new SignInPage(Web_Driver);
+        signInPage.waitForEmailAddress();
+        signInPage.loadControlsForEmailAddress();
+        signInPage.loginEmailAddress();
         Thread.sleep(500);
     }
 
-    @And("user enter valid password \"([^\"]*)\"")
-    public void userEnterValidPassword(String enterPassword) throws Throwable{
+    @And("user enter valid password")
+    public void userEnterValidPassword() throws Throwable{
         System.out.println("user enter valid password");
-        SignInPage signInPage = new SignInPage(Web_Driver);
-        signInPage.loginPassword(enterPassword);
+        signInPage = new SignInPage(Web_Driver);
+        signInPage.waitForPassword();
+        signInPage.loadControlsForPassword();
+        signInPage.loginPassword();
         Thread.sleep(500);
     }
 
-    @Then("user click on the Sign In button")
-    public void userClickOnTheSignInButton() throws Throwable{
+    @Then("user click on the Sign In Submit button")
+    public void userClickOnTheSignInSubmitButton() throws Throwable{
         System.out.println("user click on the Sign In button");
-        SignInPage signInPage = new SignInPage(Web_Driver);
+        signInPage = new SignInPage(Web_Driver);
+        signInPage.waitForSignInSubmitButton();
+        signInPage.LoadControlsForSignInSubmitbutton();
         signInPage.loginButton();
         Thread.sleep(500);
     }
