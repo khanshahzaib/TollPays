@@ -1,14 +1,13 @@
 package Utilities;
 
+import Base.BaseUtil;
 import DataProvider.ConfigFileReader;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
 import java.io.FileInputStream;
 
-import static Base.BaseUtil.mSheet;
-
-public class ReadExcel {
+public class ReadExcel extends BaseUtil {
 
     //This method is to set the File path and to open the Excel file
     public static void readExcelFile() {
@@ -21,15 +20,10 @@ public class ReadExcel {
 
         try {
             // Open the Excel file
-            FileInputStream file = new FileInputStream(src);
+            file = new FileInputStream(src);
 
             // Access the required data sheet
-            XSSFWorkbook wb = new XSSFWorkbook(file);
-
-            mSheet = wb.getSheetAt(0);
-            mSheet = wb.getSheetAt(1);
-            mSheet = wb.getSheetAt(2);
-            mSheet = wb.getSheetAt(3);
+            wb = new XSSFWorkbook(file);
 
         } catch (Exception ex) {
             System.out.println("You got: " + ex);

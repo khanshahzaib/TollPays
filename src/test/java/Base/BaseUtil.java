@@ -3,7 +3,10 @@ package Base;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
+
+import java.io.FileInputStream;
 
 public class BaseUtil {
 
@@ -18,4 +21,8 @@ public class BaseUtil {
     static String reportLocation = "/Reports/TollPays/";
 
     public static XSSFSheet mSheet;
+
+    public static FileInputStream file;
+
+    public static XSSFWorkbook wb;
 }

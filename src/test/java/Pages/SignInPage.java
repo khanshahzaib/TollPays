@@ -13,6 +13,7 @@ public class SignInPage extends BaseUtil {
 
     public SignInPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
+        mSheet = wb.getSheetAt(0);
     }
 
     //Variable's declaration
