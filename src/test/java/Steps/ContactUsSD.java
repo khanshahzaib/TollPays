@@ -11,7 +11,7 @@ public class ContactUsSD extends BaseUtil {
 
     ContactUsPage contactUsPage;
 
-    @Given("user click on the Contact Us button")
+    @Given("^user click on the Contact Us button$")
     public void userClickOnTheContactUsButton() throws Throwable {
         System.out.println("user click on the Contact Us button");
         contactUsPage = new ContactUsPage(Web_Driver);
@@ -20,13 +20,13 @@ public class ContactUsSD extends BaseUtil {
         contactUsPage.contactUsMethod();
     }
 
-    @When("user is on the Contact Us Screen")
+    @When("^user is on the Contact Us Screen$")
     public void userIsOnTheContactUsScreen() throws Throwable {
         System.out.println("user is on the Contact Us Screen");
         contactUsPage = new ContactUsPage(Web_Driver);
     }
 
-    @And("user select the reason of contact")
+    @And("^user select the reason of contact$")
     public void userSelectTheReasonOfContact() throws Throwable {
         System.out.println("user select the reason of contact");
         contactUsPage = new ContactUsPage(Web_Driver);
@@ -35,7 +35,7 @@ public class ContactUsSD extends BaseUtil {
         contactUsPage.subjectMethod();
     }
 
-    @And("user select the account type")
+    @And("^user select the account type$")
     public void userSelectTheAccountType() throws Throwable {
         System.out.println("user select the account type");
         contactUsPage = new ContactUsPage(Web_Driver);
@@ -44,7 +44,7 @@ public class ContactUsSD extends BaseUtil {
         contactUsPage.accountTypeMethod();
     }
 
-    @And("user enter valid email address for contact")
+    @And("^user enter valid email address for contact$")
     public void userEnterValidEmailAddressForContact() throws Throwable {
         System.out.println("user enter valid email address for contact");
         contactUsPage = new ContactUsPage(Web_Driver);
@@ -53,7 +53,7 @@ public class ContactUsSD extends BaseUtil {
         contactUsPage.emailMethod();
     }
 
-    @And("user enter message")
+    @And("^user enter message$")
     public void userEnterMessage() throws Throwable {
         System.out.println("user enter message");
         contactUsPage = new ContactUsPage(Web_Driver);
@@ -62,7 +62,7 @@ public class ContactUsSD extends BaseUtil {
         contactUsPage.messageMethod();
     }
 
-    @Then("user click on the Submit button")
+    @Then("^user click on the Submit button$")
     public void userClickOnTheSubmitButton() throws Throwable {
         System.out.println("user click on the Submit button");
         contactUsPage = new ContactUsPage(Web_Driver);

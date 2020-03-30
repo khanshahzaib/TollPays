@@ -14,6 +14,7 @@ public class ContactUsPage extends BaseUtil {
 
     public ContactUsPage(WebDriver webDriver){
         PageFactory.initElements(webDriver, this);
+        mSheet = wb.getSheetAt(3);
     }
 
     //Variable's Declaration

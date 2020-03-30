@@ -10,17 +10,16 @@ public class SignUpSD extends BaseUtil {
 
     SignUpPage signUpPage;
 
-    @Given("user click on the Sign Up Button")
+    @Given("^user click on the Sign Up Button$")
     public void userClickOnTheSignUpButton() throws Throwable {
         System.out.println("user click on the Sign Up Button");
         signUpPage = new SignUpPage(Web_Driver);
         signUpPage.waitForSignUpButton();
         signUpPage.loadControlsForSignUpButton();
         signUpPage.signUpMethod();
-        Thread.sleep(500);
     }
 
-    @When("user is on the Sign Up Screen")
+    @When("^user is on the Sign Up Screen$")
     public void userIsOnTheSignUpScreen() {
         System.out.println("user is on the Sign Up Screen");
     }
@@ -32,6 +31,5 @@ public class SignUpSD extends BaseUtil {
         signUpPage.waitForContinueButton();
         signUpPage.loadControlsForContinueButton();
         signUpPage.continueMethod();
-        Thread.sleep(500);
     }
 }

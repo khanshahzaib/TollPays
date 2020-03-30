@@ -2,6 +2,8 @@ package Utilities;
 
 import Base.BaseUtil;
 import DataProvider.ConfigFileReader;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
@@ -35,13 +37,12 @@ public class ReadExcel extends BaseUtil {
         if (mSheet == null) {
             return "Cell Value is null";
         }
-        return mSheet.getRow(row).getCell(column).getStringCellValue();
-    }
+        //GET CELL
+        Cell cell1 = mSheet.getRow(row).getCell(column);
+        //SET AS STRING TYPE
+        cell1.setCellType(CellType.STRING);
+        //        System.out.println("Test Data From Excel : " + numericStringValue);
 
-    public static double GetCellValueNumber(int row, int column) {
-        if (mSheet == null) {
-            return 0;
-        }
-        return mSheet.getRow(row).getCell(column).getNumericCellValue();
+        return cell1.getStringCellValue();
     }
 }
