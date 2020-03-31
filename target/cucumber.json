@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 10854814600,
+              "duration": 10783317600,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3708542900,
+              "duration": 3586309600,
               "status": "passed"
             },
             "line": 6,
@@ -51,7 +51,7 @@
         "steps": [
           {
             "result": {
-              "duration": 252500,
+              "duration": 244500,
               "status": "passed"
             },
             "line": 10,
@@ -63,7 +63,7 @@
           },
           {
             "result": {
-              "duration": 107715000,
+              "duration": 131565200,
               "status": "passed"
             },
             "line": 11,
@@ -75,7 +75,7 @@
           },
           {
             "result": {
-              "duration": 275253100,
+              "duration": 268224400,
               "status": "passed"
             },
             "line": 12,
@@ -87,7 +87,7 @@
           },
           {
             "result": {
-              "duration": 10095661500,
+              "duration": 10112344200,
               "status": "passed"
             },
             "line": 13,
@@ -99,7 +99,7 @@
           },
           {
             "result": {
-              "duration": 169497600,
+              "duration": 91878500,
               "status": "passed"
             },
             "line": 14,
@@ -137,9 +137,8 @@
         "steps": [
           {
             "result": {
-              "duration": 4220547300,
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d80.0.3987.149)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHAHZAIB-KHAN\u0027, ip: \u0027192.168.10.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\\Users\\cc\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:62308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: b5fe87a1c6108add5a2d454ed3229eec\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat Pages.ContactUsPage.contactUsMethod(ContactUsPage.java:115)\r\n\tat Steps.ContactUsSD.userClickOnTheContactUsButton(ContactUsSD.java:20)\r\n\tat ✽.Given user click on the Contact Us button(C_ContactUs.feature:6)\r\n",
-              "status": "failed"
+              "duration": 5665045400,
+              "status": "passed"
             },
             "line": 6,
             "name": "user click on the Contact Us button",
@@ -150,7 +149,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 334100,
+              "status": "passed"
             },
             "line": 7,
             "name": "user is on the Contact Us Screen",
@@ -161,7 +161,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 146829200,
+              "status": "passed"
             },
             "line": 8,
             "name": "user select the reason of contact",
@@ -172,7 +173,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 137777600,
+              "status": "passed"
             },
             "line": 9,
             "name": "user select the account type",
@@ -183,7 +185,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 162997800,
+              "status": "passed"
             },
             "line": 10,
             "name": "user enter valid email address for contact",
@@ -194,7 +197,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 161008300,
+              "status": "passed"
             },
             "line": 11,
             "name": "user enter message",
@@ -205,7 +209,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 121062900,
+              "status": "passed"
             },
             "line": 12,
             "name": "user click on the Submit button",
