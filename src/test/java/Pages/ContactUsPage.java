@@ -34,37 +34,31 @@ public class ContactUsPage extends BaseUtil {
     //region
 
     public void waitForContactUsButton(){
-        WebDriverWait webDriverWait = new WebDriverWait(Web_Driver,6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .xpath(ReadExcel.GetCellValue(1,3))));
     }
 
     public void waitForSubjectDD(){
-        WebDriverWait webDriverWait = new WebDriverWait(Web_Driver,6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .id(ReadExcel.GetCellValue(2,2))));
     }
 
     public void waitForAccountTypeDD(){
-        WebDriverWait webDriverWait = new WebDriverWait(Web_Driver,6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .id(ReadExcel.GetCellValue(3,2))));
     }
 
     public void waitForEmailField(){
-        WebDriverWait webDriverWait = new WebDriverWait(Web_Driver,6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .id(ReadExcel.GetCellValue(4,2))));
     }
 
     public void waitForMessageField(){
-        WebDriverWait webDriverWait = new WebDriverWait(Web_Driver,6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .id(ReadExcel.GetCellValue(5,2))));
     }
 
     public void waitForSubmitButton(){
-        WebDriverWait webDriverWait = new WebDriverWait(Web_Driver,6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .xpath(ReadExcel.GetCellValue(6,3))));
     }

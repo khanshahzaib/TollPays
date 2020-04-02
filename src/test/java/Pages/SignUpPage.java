@@ -30,16 +30,14 @@ public class SignUpPage extends BaseUtil {
     public void waitForSignUpButton() throws Throwable{
 
         System.out.println("Waiting for Continue Button");
-        WebDriverWait wait = new WebDriverWait(Web_Driver, 6);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .xpath(ReadExcel.GetCellValue(1,3))));
     }
 
     public void waitForContinueButton() throws Throwable{
 
         System.out.println("Waiting for Continue Button");
-        WebDriverWait wait = new WebDriverWait(Web_Driver, 6);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .xpath(ReadExcel.GetCellValue(2,3))));
     }
 

@@ -35,25 +35,21 @@ public class SignInPage extends BaseUtil {
     //region
 
     public void waitForSignInButton(){
-        WebDriverWait webDriverWait =new WebDriverWait(Web_Driver,6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .id(ReadExcel.GetCellValue(4,2))));
     }
 
     public void waitForEmailAddress(){
-        WebDriverWait webDriverWait = new WebDriverWait(Web_Driver,6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .xpath(ReadExcel.GetCellValue(1, 3))));
     }
 
     public void waitForPassword(){
-        WebDriverWait webDriverWait = new WebDriverWait(Web_Driver, 6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .xpath(ReadExcel.GetCellValue(2,3))));
     }
 
     public void waitForSignInSubmitButton(){
-        WebDriverWait webDriverWait = new WebDriverWait(Web_Driver,6);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
                 .xpath(ReadExcel.GetCellValue(3,3))));
     }

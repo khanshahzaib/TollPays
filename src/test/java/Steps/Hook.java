@@ -9,6 +9,7 @@ import cucumber.api.java.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -39,10 +40,11 @@ public class Hook extends BaseUtil {
 
         Web_Driver.manage().window().maximize();
         Web_Driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
+        webDriverWait = new WebDriverWait(Web_Driver,6);
         ReadExcel.readExcelFile();
     }
 
-    @After("@")
+    @After("@D_ContactUs")
     public void TearDownTest(Scenario scenario) {
 
         if (scenario.isFailed()) {
