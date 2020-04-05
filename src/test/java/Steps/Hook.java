@@ -51,6 +51,7 @@ public class Hook extends BaseUtil {
             System.out.println(scenario.getName());
         }
 
+        //Checks for failures if any and throws them at the end of execution
         Web_Driver.close();
         Web_Driver.quit();
         System.out.println("Closing the Browser");

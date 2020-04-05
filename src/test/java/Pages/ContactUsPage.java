@@ -8,7 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class ContactUsPage extends BaseUtil {
 
@@ -16,6 +17,12 @@ public class ContactUsPage extends BaseUtil {
         PageFactory.initElements(webDriver, this);
         mSheet = wb.getSheetAt(3);
     }
+
+
+    SoftAssert softassert = new SoftAssert();
+
+    String ActualTitle = Web_Driver.getTitle();
+    String ExpectedTitle = "Tollpays Landing Page";
 
     //Variable's Declaration
 
@@ -106,10 +113,14 @@ public class ContactUsPage extends BaseUtil {
     //region
 
     public void contactUsMethod(){
+        Assert.assertEquals(ActualTitle, ExpectedTitle);
+        Assert.assertTrue(contact_us.isDisplayed(),"Contact Us button is present");
         contact_us.click();
     }
 
     public void subjectMethod(){
+        softassert.assertEquals(ActualTitle, ExpectedTitle);
+//        softassert.assertAll();
         Select select = new Select(subject);
         select.selectByIndex(1);
     }
@@ -128,6 +139,8 @@ public class ContactUsPage extends BaseUtil {
     }
 
     public void submitMethod(){
+
+        Assert.assertTrue(submit.isDisplayed(),"submit button is present");
         submit.click();
     }
 

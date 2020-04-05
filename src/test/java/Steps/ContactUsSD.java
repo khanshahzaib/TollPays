@@ -13,9 +13,9 @@ public class ContactUsSD extends BaseUtil {
 
     @Given("^user click on the Contact Us button$")
     public void userClickOnTheContactUsButton() throws Throwable {
-        System.out.println("user click on the Contact Us button");
         contactUsPage = new ContactUsPage(Web_Driver);
         Thread.sleep(5000);
+        System.out.println("user click on the Contact Us button");
         contactUsPage.waitForContactUsButton();
         contactUsPage.loadControlsForContactUsButton();
         contactUsPage.contactUsMethod();
