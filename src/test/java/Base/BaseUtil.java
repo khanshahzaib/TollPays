@@ -19,7 +19,7 @@ public class BaseUtil {
 
     public static ExtentTest features;
 
-    static String reportLocation = "/Reports/TollPays/";
+    static String reportLocation = "/Reports/TollPays/Web";
 
     public static XSSFSheet mSheet;
 
