@@ -15,10 +15,16 @@ import java.util.concurrent.TimeUnit;
 
 public class Hook extends BaseUtil {
 
-    @Before("@A_LoginUrl")
-    public void InitializeTest() {
+    private BaseUtil base;
+    public Hook(BaseUtil base){
+        this.base = base;
+    }
 
-//        scenarioDef = base.features.createNode(scenario.getName());
+    @Before("@A_LoginUrl")
+    public void InitializeTest(Scenario scenario) {
+
+        //Below Code Snippet is for the purpose of Extent Reporting
+        scenarioDef = base.features.createNode(scenario.getName());
 
         ConfigFileReader configFileReader = new ConfigFileReader();
 

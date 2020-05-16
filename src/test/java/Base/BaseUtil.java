@@ -15,11 +15,11 @@ public class BaseUtil {
 
     public static ExtentReports extent;
 
-    static ExtentTest scenarioDef;
+    public static ExtentTest scenarioDef;
 
     public static ExtentTest features;
 
-    static String reportLocation = "/Reports/TollPays/Web";
+    static String reportLocation = "/Reports/TollPays/Web/";
 
     public static XSSFSheet mSheet;
 
