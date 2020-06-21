@@ -28,6 +28,9 @@ public class SignInPage extends BaseUtil {
 
     WebElement btnSubmitSignIn;
 
+//    public final static By SignInButton = (By.id(ReadExcel.GetCellValue(4,2)));
+    public final static By SignInButton = (By.id("button_signin"));
+
     //endregion
 
     //Wait For DOM Elements
@@ -35,8 +38,7 @@ public class SignInPage extends BaseUtil {
     //region
 
     public void waitForSignInButton(){
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
-                .id(ReadExcel.GetCellValue(4,2))));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(SignInButton));
     }
 
     public void waitForEmailAddress(){
@@ -61,8 +63,7 @@ public class SignInPage extends BaseUtil {
     //region
 
     public void loadControlsForSignInButton(){
-        btnSignIn = Web_Driver.findElement(By.
-                id(ReadExcel.GetCellValue(4,2)));
+        btnSignIn = Web_Driver.findElement(SignInButton);
     }
 
     public void loadControlsForEmailAddress(){
