@@ -21,7 +21,7 @@ public class Hook extends BaseUtil {
     }
 
     @Before("@A_LoginUrl")
-    public void InitializeTest(Scenario scenario) {
+    public void SetUp(Scenario scenario) {
 
         //Below Code Snippet is for the purpose of Extent Reporting
         scenarioDef = base.features.createNode(scenario.getName());
@@ -51,7 +51,7 @@ public class Hook extends BaseUtil {
     }
 
     @After("@D_ContactUs")
-    public void TearDownTest(Scenario scenario) {
+    public void tearDown(Scenario scenario) {
 
         if (scenario.isFailed()) {
             System.out.println(scenario.getName());
