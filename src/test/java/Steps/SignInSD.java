@@ -7,6 +7,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.testng.Assert;
 
 public class SignInSD extends BaseUtil {
 
@@ -16,6 +17,12 @@ public class SignInSD extends BaseUtil {
     public void userEnterTheCorrectURL() throws Throwable {
         ConfigFileReader configFileReader = new ConfigFileReader();
         Web_Driver.navigate().to(configFileReader.getApplicationUrl());
+
+        String actualResult = Web_Driver.getCurrentUrl();
+        System.out.println("CurrentUrl" + Web_Driver.getCurrentUrl());
+        String expectedResult = "https://demo-tollpays.amaxzatech.com/";
+        Assert.assertEquals(actualResult, expectedResult,"Could Not Access Application URL");
+
         System.out.println("Application launch successfully...");
     }
 

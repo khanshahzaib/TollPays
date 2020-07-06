@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class ContactUsPage extends BaseUtil {
@@ -18,11 +19,10 @@ public class ContactUsPage extends BaseUtil {
         mSheet = wb.getSheetAt(3);
     }
 
+    SoftAssert softAssert = new SoftAssert();
 
-    SoftAssert softassert = new SoftAssert();
-
-    String ActualTitle = Web_Driver.getTitle();
-    String ExpectedTitle = "Tollpays Landing Page";
+    String actualTitle = Web_Driver.getTitle();
+    String expectedTitle = "Tollpays Landing Page";
 
     //Variable's Declaration
 
@@ -113,13 +113,13 @@ public class ContactUsPage extends BaseUtil {
     //region
 
     public void contactUsMethod(){
-        Assert.assertEquals(ActualTitle, ExpectedTitle);
+        Assert.assertEquals(actualTitle, expectedTitle);
         Assert.assertTrue(contact_us.isDisplayed(),"Contact Us button is present");
         contact_us.click();
     }
 
     public void subjectMethod(){
-        softassert.assertEquals(ActualTitle, ExpectedTitle);
+        softAssert.assertEquals(actualTitle, expectedTitle);
 //        softassert.assertAll();
         Select select = new Select(subject);
         select.selectByIndex(1);
