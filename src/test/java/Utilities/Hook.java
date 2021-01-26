@@ -24,7 +24,8 @@ public class Hook extends BaseUtil {
     public void SetUp(Scenario scenario) {
 
         //Below Code Snippet is for the purpose of Extent Reporting
-        scenarioDef = base.features.createNode(scenario.getName());
+        //Comment the below line when executing from MAVEN Command Line
+//        scenarioDef = base.features.createNode(scenario.getName());
 
         ConfigFileReader configFileReader = new ConfigFileReader();
 
