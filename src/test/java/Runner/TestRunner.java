@@ -4,7 +4,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-                 features = {"src/test/java/Features"},
+                 features = {"src/test/resources/Features"},
                  format = {"json:target/cucumber.json", "html:target/site/cucumber-pretty"},
                  glue = {"Utilities", "Steps"},
                  monochrome = true,

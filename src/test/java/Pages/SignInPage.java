@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SignInPage extends BaseUtil {
 
@@ -41,19 +40,11 @@ public class SignInPage extends BaseUtil {
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(SignInButton));
     }
 
-    public void waitForEmailAddress(){
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
-                .xpath(ReadExcel.GetCellValue(1, 3))));
-    }
-
-    public void waitForPassword(){
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
-                .xpath(ReadExcel.GetCellValue(2,3))));
-    }
-
-    public void waitForSignInSubmitButton(){
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
-                .xpath(ReadExcel.GetCellValue(3,3))));
+    public void waitForElementsPresence(){
+        for(int i = 1 ; i <= 3 ; i++){
+            webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By
+                    .xpath(ReadExcel.GetCellValue(i, 3))));
+        }
     }
 
     //endregion
@@ -66,19 +57,23 @@ public class SignInPage extends BaseUtil {
         btnSignIn = Web_Driver.findElement(SignInButton);
     }
 
-    public void loadControlsForEmailAddress(){
-        txtEmail = Web_Driver.findElement(By.
-                xpath(ReadExcel.GetCellValue(1,3)));
-    }
-
-    public void loadControlsForPassword(){
-        txtPassword = Web_Driver.findElement(By
-                .xpath(ReadExcel.GetCellValue(2,3)));
-    }
-
-    public void LoadControlsForSignInSubmitbutton(){
-        btnSubmitSignIn = Web_Driver.findElement(By.
-                xpath(ReadExcel.GetCellValue(3,3)));
+    public void loadControlsForElements(){
+        for(int i = 1 ; i <= 3 ; i++){
+            switch(i){
+                case 1:
+                    txtEmail = Web_Driver.findElement(By
+                            .xpath(ReadExcel.GetCellValue(i, 3)));
+                    break;
+                case 2:
+                    txtPassword = Web_Driver.findElement(By
+                            .xpath(ReadExcel.GetCellValue(i, 3)));
+                    break;
+                case 3:
+                    btnSubmitSignIn = Web_Driver.findElement(By
+                            .xpath(ReadExcel.GetCellValue(i, 3)));
+                    break;
+            }
+        }
     }
 
     //endregion
@@ -87,7 +82,7 @@ public class SignInPage extends BaseUtil {
 
     //region
 
-    public void loginSignInButton(){
+    public void loginSignInButton() {
         btnSignIn.click();
     }
 
@@ -104,7 +99,4 @@ public class SignInPage extends BaseUtil {
     }
 
     //endregion
-
-
-
 }
